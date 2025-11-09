@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+python-multipart
+pillow
+easyocr
+pytesseract
+transformers
+torch
+torchvision
+torchaudio
+scikit-image
+opencv-python
+matplotlib
+seaborn
+gdown
