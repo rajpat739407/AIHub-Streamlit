@@ -29,8 +29,8 @@ def load_movies_and_similarity(movies_pkl, sim_pkl):
 st.title("AIHub — Movie Rec + OCR + TextGen Demo")
 
 # Use secrets for Drive file IDs (set them on Streamlit Cloud)
-movies_pkl_id = st.secrets.get("MOVIES_PKL_ID")
-sim_pkl_id = st.secrets.get("SIM_PKL_ID")
+movies_pkl_id = st.secrets.get("1hmDviByo0HOYWb21GXkQyxRDpfIS-gGg")
+sim_pkl_id = st.secrets.get("1LqL-A-hNiKD-wBuWhetFQDgWNwd_jqe6")
 
 if movies_pkl_id and sim_pkl_id:
     movies_pkl = DATA_DIR / "movies.pkl"
