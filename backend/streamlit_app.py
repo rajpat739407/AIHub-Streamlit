@@ -9,6 +9,7 @@ st.set_page_config(page_title="AIHub", layout="wide")
 
 DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
+drive_id = "1D0Jn2fs-fBYhJfTsahvL-kowemKTGYv6"
 
 # Example: download precomputed pickles (only if not present)
 def download_if_missing(drive_id, out_path):
@@ -16,6 +17,7 @@ def download_if_missing(drive_id, out_path):
     if not out_path.exists():
         st.info(f"Downloading {out_path.name} ...")
         gdown.download(url, str(out_path), quiet=False)
+        
 
 @st.cache_data(show_spinner=False)
 def load_movies_and_similarity(movies_pkl, sim_pkl):
